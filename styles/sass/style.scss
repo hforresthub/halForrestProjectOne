@@ -1,0 +1,668 @@
+@import 'setup';
+@import 'vars';
+
+@mixin fontSize($sizeValue) {
+	font-size: $sizeValue;
+	color: blue;
+	font-weight: bold;
+}
+
+/* ==================================
+GENERAL
+================================== */
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	margin: 0 10%;
+	background-color: $backgroundPrimaryColor;
+}
+ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	display: block;
+	object-fit: cover;
+}
+.wrapper {
+	display: flex;
+}
+
+/* ==================================
+TYPOGRAPHY
+================================== */
+h1 {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 5.56rem;
+	color: $mainHeaderColor;
+	span {
+		font-family: 'Lato', sans-serif;
+		display: block;
+		text-transform: lowercase;
+		font-weight: bold;
+		font-size: 3.1rem;
+		color: $subHeaderColor;
+		line-height: 2.9rem;
+		letter-spacing: 0.335rem;
+	}
+}
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 1.75rem;
+	color: $subHeaderColor;
+	line-height: 2.9rem;
+	letter-spacing: 0.19rem;
+}
+h3 {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.75rem;
+	letter-spacing: 0.19rem;
+}
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: $subHeaderColor;
+	line-height: 2.9rem;
+	letter-spacing: 0.16rem;
+}
+h5 {
+	font-family: 'Playfair Display SC',serif;
+	font-size: 1.73rem;
+	text-align: center;
+	color: $dropColor;
+}
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	letter-spacing: 0.1rem;
+	color: $blackColor;
+}
+a, nav li {
+	font-family: 'Playfair Display SC',serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.6rem;
+	letter-spacing: 0.05rem;
+	text-decoration: none;
+	background-color: $mainHeaderColor;
+	color: white;
+	width: fit-content;
+	padding: 0 0.5rem;
+}
+
+/* ==================================
+HEADER
+================================== */
+header>.wrapper {
+	background-image: url("../images/home-image-1.jpg");
+	background-size: cover;
+	flex-direction: column;
+	height: 40vh;
+}
+header .wrapper {
+	display: flex;
+	position: relative;
+	.welcomeImage {
+		position: absolute;
+		top: 50px;
+		left: 0;
+		img {
+			width: 400px;
+		}
+	}
+}
+.navigation {
+	margin: 1% 10%;
+	justify-content: space-between;
+}
+nav a, nav li {
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.45rem;
+	letter-spacing: 0.05rem;
+	background-color: rgba(0, 0, 0, 0);
+	text-transform: uppercase;
+}
+nav li {
+	color: $dropColor;
+}
+.welcome h1 {
+	position: relative;
+	top: 20%;
+	left: 1%;
+}
+span {
+	display: block;
+}
+i.fa-bars {
+	display: none;
+}
+/* ==================================
+VISIT
+================================== */
+.visit {
+	margin: 20% 10% 10%;
+	img {
+		filter: drop-shadow(-1vh 1vh 0 $dropColor);
+	}
+}
+.visitGuyana {
+	flex-direction: column;
+	width: 70%;
+}
+.imageVisit {
+	width: 30%;
+}
+/* ==================================
+GALLERY
+================================== */
+.gallery {
+	background-color: $backgroundSecondaryColor;
+	justify-content: space-evenly;
+	padding: 5%;
+	img {
+		padding: 5%;
+	}
+}
+/* ==================================
+FEATURES
+================================== */
+.features {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 5% 10%;
+	li {
+		width: 50%;
+	}
+	i {
+		color: white;
+	}
+}
+.awesomeCircle {
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	width: 30px;
+	background-color: $dropColor;
+	border-radius: 50%;
+	color: white;
+	padding: 10px;
+	margin: 2% 5%;
+}
+.feature1, .feature2 {
+	display: flex;
+	flex-direction: row;
+}
+.features li {
+	display: flex;
+}
+.subFeature {
+	flex-direction: column;
+}
+/* ==================================
+PLANLOCATIONS
+================================== */
+.planAndLocations {
+	display: flex;
+	flex-direction: column;
+	background-color: $backgroundSecondaryColor;
+}
+.planAhead,
+.newLocations {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	img {
+		filter: drop-shadow(-1vh 1vh 0 $dropColor);
+	}
+}
+.planAhead img {
+	filter: drop-shadow(1vh 1vh 0 $dropColor);
+}
+.planImage, .newImage {
+	width: 40%;
+	flex-direction: column;
+	position: relative;
+
+}
+.planImage {
+	top: -2vh;
+	left: 0;
+}
+.newImage {
+	bottom: -4vh;
+	right: 0;
+}
+.planText, .newText {
+	width: 45%;
+	flex-direction: column;
+	h2 {
+		color: $mainHeaderColor;
+	}
+}
+.planText {
+	padding: 5% 10% 5% 0;
+}
+.newText {
+	padding: 0% 0 5% 10%;
+	text-align: right;
+	justify-content: right;
+	align-items: flex-end;
+}
+
+/* ==================================
+BANNER
+================================== */
+.banner {
+	height: 25vw;
+	background-image: url("../images/banner-image.jpg");
+	background-size: cover;
+}
+.freeTrips {
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	padding: 10%;
+}
+
+/* ==================================
+FOOTER
+================================== */
+footer {
+	background-color: $blackColor;
+	p {
+		color: white;
+		text-align: center;
+	}
+}
+
+
+/* **********************************
+BLOG PAGE
+********************************** */
+/* ==================================
+GENERAL
+================================== */
+.date {
+	color: $mainHeaderColor;
+}
+/* ==================================
+HEADER
+================================== */
+.blogPage header>.wrapper {
+	background-image: url("../images/blog-image-1.jpg");
+	background-size: cover;
+	flex-direction: column;
+	height: 40vh;
+}
+.blogPage h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 4.75rem;
+	color: $backgroundPrimaryColor;
+	line-height: 2.9rem;
+	letter-spacing: 0.45rem;
+	padding: 10%;
+}
+/* ==================================
+MAIN
+================================== */
+.blogMain section {
+	width: 60%;
+}
+.blogMain aside {
+	width: 40%;
+}
+
+/* ==================================
+FIVEDAYS
+================================== */
+.fiveDays {
+	flex-direction: column;
+	width: 100%;
+	border-right: 3px solid $dropColor;
+	border-bottom: 3px solid $dropColor;
+	padding-right: 0vh;
+	margin-left: calc(1vh - 3px);
+}
+.fiveDaysImage {
+	position: relative;
+	top: -5vh;
+	right: calc(1vh - 3px);
+	filter: drop-shadow(1vh 1vh 0 $dropColor);
+}
+.fiveDaysText {
+	flex-direction: column;
+	p {
+		margin: 1vh 2vh;
+	}
+}
+/* ==================================
+ASIDE - ourMission
+================================== */
+.ourMission {
+	flex-direction: column;
+	width: 100%;
+	padding: 20% 0 0 30%;
+}
+.ourMissionText {
+	flex-direction: column;
+	h4 {
+		color: $mainHeaderColor;
+	}
+	ul {
+		flex-direction: column;
+		list-style: outside;
+		margin: 0 0 0 1rem;
+		color: $dropColor;
+	}
+	a {
+		font-family: 'Lato', sans-serif;
+		background-color: rgba(0, 0, 0, 0);
+		color: $subHeaderColor;
+		padding: 0;
+		margin: 0;
+		font-weight: bold;
+	}
+}
+/* ==================================
+ASIDE - comments
+================================== */
+.comments {
+	flex-direction: column;
+	width: 65%;
+	padding: 5%;
+	h4 {
+		color: black;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 1.6rem;
+	}
+}
+.comment {
+	padding: 5% 0;
+}
+.commentImage {
+	width: 40%;
+	height: 40%;
+}
+.commentText {
+	flex-direction: column;
+	padding: 0 5%;
+	p.date {
+		font-weight: bold;
+	}
+}
+/* ==================================
+FORM
+================================== */
+form .wrapper {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.formName,
+.formEmail,
+.formComment {
+	border: 1px solid $dropColor;
+	::placeholder {
+		font-family: 'Lato', sans-serif;
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.6rem;
+	}
+}
+.formName,
+.formEmail {
+	width: 49%;
+	height: 2rem;
+	border: none;
+	border-bottom: 1px solid $dropColor;
+	padding: 3%;
+}
+.formComment {
+	width: 100%;
+	height: 7rem;
+	margin: 3% 0;
+	padding: 3%;
+	resize: none;
+}
+input[type=submit] {
+	font-family: 'Playfair Display SC',serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.6rem;
+	letter-spacing: 0.05rem;
+	text-decoration: none;
+	background-color: $mainHeaderColor;
+	color: white;
+	width: fit-content;
+	padding: 0 0.5rem;
+	width: 100%;
+}
+
+/* **********************************
+CONTACT PAGE
+********************************** */
+/* ==================================
+FORM
+================================== */
+/* ==================================
+HEADER
+================================== */
+.contactPage {
+	background-color: $backgroundPrimaryColor;
+}
+.contactPage header>.wrapper {
+	background-image: url("../images/contact-image-1.jpg");
+	background-size: cover;
+	flex-direction: column;
+	height: 40vh;
+}
+.contactPage h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 4.75rem;
+	color: $backgroundPrimaryColor;
+	line-height: 2.9rem;
+	letter-spacing: 0.45rem;
+	padding: 10%;
+}
+/* ==================================
+MAIN
+================================== */
+.contactMain {
+	flex-direction: row;
+}
+.contact {
+	position: relative;
+	top: -12vh;
+	left: 0;
+	background-color: white;
+	width: 60%;
+	padding: 5%;
+	margin: 5% 5% 0 5%;
+	filter: drop-shadow(1vh 1vh 0 $dropColor);
+	form {
+		background-color: white;
+		::placeholder {
+			font-family: 'Lato', sans-serif;
+			font-size: 1rem;
+			letter-spacing: 0.1rem;
+			line-height: 1.6rem;
+		}
+	}
+}
+.contactUs {
+	width: 40%;
+	padding: 7%;
+	flex-direction: column;
+}
+.contactUsList {
+	flex-direction: column;
+}
+.awesomes li i {
+	padding: 0 1rem 0 0;
+	color: $blackColor;
+}
+.ourEmail {
+	padding: 5% 0;
+	font-weight: bold;
+	color: $blackColor;
+}
+.ourAddress ul {
+	flex-direction: column;
+	color: $blackColor;
+	font-family: 'Lato', sans-serif;
+}
+
+/* ==================================
+MEDIA QUERIES
+================================== */
+@media (min-width: 1000px) {
+	body {
+		width: 1000px;
+		margin: auto;
+	}
+	.welcome h1 {
+		position: relative;
+		top: 20%;
+		left: 30%;
+	}
+}
+@media (max-width: 800px) {
+/* **********************************
+HOME PAGE
+********************************** */
+	header nav {
+		text-align: left;
+		ul {
+			flex-direction: column;
+			a {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	.gallery ul li img {
+		width: 100%;
+	}
+	.gallery li:last-of-type, .welcomeImage img {
+		display: none;
+	}
+	.visit, .planAhead, .newLocations, .planText, .planImage, .newText, .newImage {
+		flex-direction: column;
+		width: 100%;
+	}
+	h1 {
+		font-size: 3rem;
+		span {
+			font-size: 1.5rem;
+		}
+	}
+	img {
+		width: 90%;
+	}
+	.features, .feature1, .feature2, .subFeature {
+		flex-direction: column;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.features {
+		margin-bottom: 10%;
+	}
+	ul .features li {
+		width: 100%;
+	}
+	.newImage {
+		right: -4vh;
+	}
+/* **********************************
+BLOG PAGE
+********************************** */
+	.blogMain {
+		flex-direction: column;
+		section, aside {
+			width: 100%;
+			.ourMission {
+				padding: 0;
+				margin: 0;
+			}
+		}
+	}
+	.comments {
+		padding: 10% 0;
+		margin: 10% 0;
+		width: 100%;
+	}
+/* **********************************
+CONTACT PAGE
+********************************** */
+	.contact {
+		top: -6vh;
+		width: 90%;
+	}
+	.contactPage h1 {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
+	.contactMain {
+		flex-direction: column;
+	}
+	.contactUs {
+		width: 100%;
+		justify-content: center;
+		.awesomes, .contactUsList {
+			justify-content: center;
+		}
+
+		.ourEmail, .ourAddress {
+			justify-content: center;
+			text-align: center;
+		}
+		ul li:last-of-type i {
+			padding: 0;
+		}
+	}
+}
+@media (max-width: 576px) {
+/* **********************************
+HOME PAGE
+********************************** */
+
+	.welcome h1 {
+		font-size: 2rem;
+		span {
+			font-size: 1rem;
+		}
+		left: 0;
+	}
+	.newImage {
+		right: -2vh;
+	}
+/* **********************************
+CONTACT PAGE
+********************************** */
+.contact {
+		top: -6vh;
+		width: 90%;
+	}
+	.contactPage h1 {
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
