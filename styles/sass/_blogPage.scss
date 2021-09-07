@@ -1,0 +1,163 @@
+
+/* **********************************
+BLOG PAGE
+********************************** */
+/* ==================================
+GENERAL
+================================== */
+.date {
+	color: $mainHeaderColor;
+}
+/* ==================================
+HEADER
+================================== */
+.blogPage header>.wrapper {
+	background-image: url("../images/blog-image-1.jpg");
+	background-size: cover;
+	flex-direction: column;
+	height: 40vh;
+}
+.blogPage h1 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 4.75rem;
+	color: $backgroundPrimaryColor;
+	line-height: 2.9rem;
+	letter-spacing: 0.45rem;
+	padding: 10%;
+}
+/* ==================================
+MAIN
+================================== */
+.blogMain section {
+	width: 60%;
+}
+.blogMain aside {
+	width: 40%;
+}
+
+/* ==================================
+FIVEDAYS
+================================== */
+.fiveDays {
+	flex-direction: column;
+	width: 100%;
+	border-right: 3px solid $dropColor;
+	border-bottom: 3px solid $dropColor;
+	padding-right: 0vh;
+	margin-left: calc(1vh - 3px);
+}
+.fiveDaysImage {
+	position: relative;
+	top: -5vh;
+	right: calc(1vh - 3px);
+	filter: drop-shadow(1vh 1vh 0 $dropColor);
+}
+.fiveDaysText {
+	flex-direction: column;
+	p {
+		margin: 1vh 2vh;
+	}
+}
+/* ==================================
+ASIDE - ourMission
+================================== */
+.ourMission {
+	flex-direction: column;
+	width: 100%;
+	padding: 20% 0 0 30%;
+}
+.ourMissionText {
+	flex-direction: column;
+	h4 {
+		color: $mainHeaderColor;
+	}
+	ul {
+		flex-direction: column;
+		list-style: outside;
+		margin: 0 0 0 1rem;
+		color: $dropColor;
+	}
+	a {
+		font-family: 'Lato', sans-serif;
+		background-color: rgba(0, 0, 0, 0);
+		color: $subHeaderColor;
+		padding: 0;
+		margin: 0;
+		font-weight: bold;
+	}
+}
+/* ==================================
+ASIDE - comments
+================================== */
+.comments {
+	flex-direction: column;
+	width: 65%;
+	padding: 5%;
+	h4 {
+		color: black;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 1.6rem;
+	}
+}
+.comment {
+	padding: 5% 0;
+}
+.commentImage {
+	width: 40%;
+	height: 40%;
+}
+.commentText {
+	flex-direction: column;
+	padding: 0 5%;
+	p.date {
+		font-weight: bold;
+	}
+}
+/* ==================================
+FORM
+================================== */
+form .wrapper {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.formName,
+.formEmail,
+.formComment {
+	border: 1px solid $dropColor;
+	::placeholder {
+		font-family: 'Lato', sans-serif;
+		font-size: 1rem;
+		letter-spacing: 0.1rem;
+		line-height: 1.6rem;
+	}
+}
+.formName,
+.formEmail {
+	width: 49%;
+	height: 2rem;
+	border: none;
+	border-bottom: 1px solid $dropColor;
+	padding: 3%;
+}
+.formComment {
+	width: 100%;
+	height: 7rem;
+	margin: 3% 0;
+	padding: 3%;
+	resize: none;
+}
+input[type=submit] {
+	font-family: 'Playfair Display SC',serif;
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.6rem;
+	letter-spacing: 0.05rem;
+	text-decoration: none;
+	background-color: $mainHeaderColor;
+	color: white;
+	width: fit-content;
+	padding: 0 0.5rem;
+	width: 100%;
+}
