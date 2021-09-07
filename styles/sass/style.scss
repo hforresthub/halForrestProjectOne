@@ -35,7 +35,9 @@ img {
 .wrapper {
 	display: flex;
 }
-
+/* **********************************
+HOME PAGE
+********************************** */
 /* ==================================
 TYPOGRAPHY
 ================================== */
@@ -290,81 +292,6 @@ footer {
 	}
 }
 
-@import 'blogPages';
-
-/* **********************************
-CONTACT PAGE
-********************************** */
-/* ==================================
-FORM
-================================== */
-/* ==================================
-HEADER
-================================== */
-.contactPage {
-	background-color: $backgroundPrimaryColor;
-}
-.contactPage header>.wrapper {
-	background-image: url("../images/contact-image-1.jpg");
-	background-size: cover;
-	flex-direction: column;
-	height: 40vh;
-}
-.contactPage h1 {
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	font-size: 4.75rem;
-	color: $backgroundPrimaryColor;
-	line-height: 2.9rem;
-	letter-spacing: 0.45rem;
-	padding: 10%;
-}
-/* ==================================
-MAIN
-================================== */
-.contactMain {
-	flex-direction: row;
-}
-.contact {
-	position: relative;
-	top: -12vh;
-	left: 0;
-	background-color: white;
-	width: 60%;
-	padding: 5%;
-	margin: 5% 5% 0 5%;
-	filter: drop-shadow(1vh 1vh 0 $dropColor);
-	form {
-		background-color: white;
-		::placeholder {
-			font-family: 'Lato', sans-serif;
-			font-size: 1rem;
-			letter-spacing: 0.1rem;
-			line-height: 1.6rem;
-		}
-	}
-}
-.contactUs {
-	width: 40%;
-	padding: 7%;
-	flex-direction: column;
-}
-.contactUsList {
-	flex-direction: column;
-}
-.awesomes li i {
-	padding: 0 1rem 0 0;
-	color: $blackColor;
-}
-.ourEmail {
-	padding: 5% 0;
-	font-weight: bold;
-	color: $blackColor;
-}
-.ourAddress ul {
-	flex-direction: column;
-	color: $blackColor;
-	font-family: 'Lato', sans-serif;
-}
-
+@import 'blogPage';
+@import 'contactPage';
 @import 'mediaQueries';

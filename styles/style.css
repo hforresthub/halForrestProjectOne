@@ -271,6 +271,9 @@ img {
   display: flex;
 }
 
+/* **********************************
+HOME PAGE
+********************************** */
 /* ==================================
 TYPOGRAPHY
 ================================== */
@@ -1131,11 +1134,11 @@ MEDIA QUERIES
   HOME PAGE
   ********************************** */
   .welcome h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     left: 0;
   }
   .welcome h1 span {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .newImage {
