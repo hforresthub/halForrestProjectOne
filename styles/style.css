@@ -361,8 +361,7 @@ header > .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 45vh;
-  margin: 0 0 40% 0;
+  height: 40vh;
 }
 
 header .wrapper {
@@ -373,11 +372,12 @@ header .wrapper {
 }
 header .wrapper .welcomeImage {
   position: absolute;
-  top: 50px;
+  top: 10%;
   left: 0;
 }
 header .wrapper .welcomeImage img {
-  width: 400px;
+  height: 40vh;
+  width: 40vh;
 }
 
 .navigation {

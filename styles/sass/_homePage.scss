@@ -73,18 +73,18 @@ header>.wrapper {
 	background-image: url("../images/home-image-1.jpg");
 	background-size: cover;
 	flex-direction: column;
-	height: 45vh;
-	margin: 0 0 40% 0;
+	height: 40vh;
 }
 header .wrapper {
 	display: flex;
 	position: relative;
 	.welcomeImage {
 		position: absolute;
-		top: 50px;
+		top: 10%;
 		left: 0;
 		img {
-			width: 400px;
+			height: 40vh;
+			width: 40vh;
 		}
 	}
 }
