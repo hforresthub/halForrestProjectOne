@@ -16,6 +16,9 @@ MEDIA QUERIES
 /* **********************************
 HOME PAGE
 ********************************** */
+	header>.wrapper {
+		height: 50vh;
+	}
 	header nav {
 		text-align: left;
 		ul {
@@ -112,7 +115,9 @@ CONTACT PAGE
 /* **********************************
 HOME PAGE
 ********************************** */
-
+	header>.wrapper {
+		height: 60vh;
+	}
 	.welcome h1 {
 		font-size: 2.5rem;
 		span {
