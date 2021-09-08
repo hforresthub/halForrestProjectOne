@@ -1076,6 +1076,11 @@ MEDIA QUERIES
     height: 50vh;
   }
 
+  .blogPage h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
   .blogMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1166,6 +1171,11 @@ MEDIA QUERIES
   ********************************** */
   .blogPage header > .wrapper {
     height: 60vh;
+  }
+
+  .blogPage h1 {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 
   /* **********************************

@@ -69,6 +69,10 @@ BLOG PAGE
 	.blogPage header>.wrapper {
 		height: 50vh;
 	}
+	.blogPage h1 {
+		font-size: 3rem;
+		line-height: 3rem;
+	}
 	.blogMain {
 		flex-direction: column;
 		section, aside {
@@ -139,6 +143,10 @@ BLOG PAGE
 ********************************** */
 	.blogPage header>.wrapper {
 		height: 60vh;
+	}
+	.blogPage h1 {
+		font-size: 2rem;
+		line-height: 2rem;
 	}
 /* **********************************
 CONTACT PAGE
