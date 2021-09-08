@@ -361,7 +361,7 @@ header > .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 40vh;
+  height: 45vh;
 }
 
 header .wrapper {
@@ -647,7 +647,7 @@ HEADER
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 40vh;
+  height: 45vh;
 }
 
 .blogPage h1 {
@@ -883,7 +883,7 @@ HEADER
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 40vh;
+  height: 45vh;
 }
 
 .contactPage h1 {
