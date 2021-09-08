@@ -361,7 +361,7 @@ header > .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 40vh;
+  height: 45vw;
 }
 
 header .wrapper {
@@ -372,12 +372,12 @@ header .wrapper {
 }
 header .wrapper .welcomeImage {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 0;
 }
 header .wrapper .welcomeImage img {
-  height: 40vh;
-  width: 40vh;
+  height: 45vw;
+  width: 45vw;
 }
 
 .navigation {
@@ -403,7 +403,7 @@ nav li {
 
 .welcome h1 {
   position: relative;
-  top: 20%;
+  top: 45%;
   left: 1%;
 }
 
@@ -997,10 +997,19 @@ MEDIA QUERIES
     margin: auto;
   }
 
+  header > .wrapper {
+    height: 500px;
+  }
+
   .welcome h1 {
     position: relative;
-    top: 20%;
-    left: 30%;
+    top: 45%;
+    left: 35%;
+  }
+
+  header .wrapper .welcomeImage img {
+    width: 450px;
+    height: 450px;
   }
 }
 @media (max-width: 800px) {
@@ -1039,6 +1048,14 @@ MEDIA QUERIES
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
+  }
+
+  .newText {
+    padding-right: 5%;
+  }
+
+  .planText {
+    padding-left: 5%;
   }
 
   h1 {

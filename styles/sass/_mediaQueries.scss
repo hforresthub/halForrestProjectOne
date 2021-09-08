@@ -6,10 +6,17 @@ MEDIA QUERIES
 		width: 1000px;
 		margin: auto;
 	}
+	header>.wrapper {
+		height: 500px;
+	}
 	.welcome h1 {
 		position: relative;
-		top: 20%;
-		left: 30%;
+		top: 45%;
+		left: 35%;
+	}
+	header .wrapper .welcomeImage img {
+		width: 450px;
+		height: 450px;
 	}
 }
 @media (max-width: 800px) {
@@ -38,6 +45,12 @@ HOME PAGE
 	.visit, .planAhead, .newLocations, .planText, .planImage, .newText, .newImage {
 		flex-direction: column;
 		width: 100%;
+	}
+	.newText {
+		padding-right: 5%;
+	}
+	.planText {
+		padding-left: 5%;
 	}
 	h1 {
 		font-size: 3rem;
