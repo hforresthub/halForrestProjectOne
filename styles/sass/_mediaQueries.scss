@@ -46,6 +46,10 @@ HOME PAGE
 		flex-direction: column;
 		width: 100%;
 	}
+	.imageVisit {
+		width: 30%;
+		margin: 10% 0 0 1vh;
+	}
 	.newText {
 		padding-right: 5%;
 	}
@@ -74,7 +78,8 @@ HOME PAGE
 		width: 100%;
 	}
 	.newImage {
-		right: -4vh;
+		right: 0vh;
+		flex-direction: row-reverse;
 	}
 /* **********************************
 BLOG PAGE

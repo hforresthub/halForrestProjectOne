@@ -349,6 +349,7 @@ a, nav li {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 0.5rem;
+  margin: 0.5rem 0 0 0;
 }
 
 /* ==================================
@@ -436,6 +437,7 @@ VISIT
 
 .imageVisit {
   width: 30%;
+  margin: 0 0 0 1vh;
 }
 
 /* ==================================
@@ -552,7 +554,7 @@ PLANLOCATIONS
 }
 
 .planImage, .newImage {
-  width: 40%;
+  width: 45%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -600,7 +602,7 @@ PLANLOCATIONS
 BANNER
 ================================== */
 .banner {
-  height: 25vw;
+  height: 25vh;
   background-image: url("../images/banner-image.jpg");
   background-size: cover;
 }
@@ -1050,6 +1052,11 @@ MEDIA QUERIES
     width: 100%;
   }
 
+  .imageVisit {
+    width: 30%;
+    margin: 10% 0 0 1vh;
+  }
+
   .newText {
     padding-right: 5%;
   }
@@ -1088,7 +1095,11 @@ MEDIA QUERIES
   }
 
   .newImage {
-    right: -4vh;
+    right: 0vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
 
   /* **********************************
