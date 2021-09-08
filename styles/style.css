@@ -1003,7 +1003,7 @@ MEDIA QUERIES
   HOME PAGE
   ********************************** */
   header > .wrapper {
-    height: 55vh;
+    height: 50vh;
   }
 
   header nav {
@@ -1072,6 +1072,10 @@ MEDIA QUERIES
   /* **********************************
   BLOG PAGE
   ********************************** */
+  .blogPage header > .wrapper {
+    height: 50vh;
+  }
+
   .blogMain {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1095,6 +1099,10 @@ MEDIA QUERIES
   /* **********************************
   CONTACT PAGE
   ********************************** */
+  .contactPage header > .wrapper {
+    height: 50vh;
+  }
+
   .contact {
     top: -6vh;
     width: 90%;
@@ -1154,8 +1162,19 @@ MEDIA QUERIES
   }
 
   /* **********************************
+  BLOG PAGE
+  ********************************** */
+  .blogPage header > .wrapper {
+    height: 60vh;
+  }
+
+  /* **********************************
   CONTACT PAGE
   ********************************** */
+  .contactPage header > .wrapper {
+    height: 60vh;
+  }
+
   .contact {
     top: -6vh;
     width: 90%;
