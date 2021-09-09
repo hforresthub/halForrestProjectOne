@@ -45,9 +45,14 @@ HOME PAGE
 	.visit, .planAhead, .newLocations, .planText, .planImage, .newText, .newImage {
 		flex-direction: column;
 		width: 100%;
+		margin: 0;
+	}
+	.visit {
+		margin: 10% auto;
+		align-items: center;
 	}
 	.imageVisit {
-		width: 30%;
+		width: 50%;
 		margin: 10% 0 0 1vh;
 	}
 	.newText {
@@ -72,7 +77,7 @@ HOME PAGE
 		margin: 0;
 	}
 	.features {
-		margin-bottom: 10%;
+		margin: 10% 0;
 	}
 	ul .features li {
 		width: 100%;
@@ -100,6 +105,9 @@ BLOG PAGE
 				margin: 0;
 			}
 		}
+	}
+	.fiveDays {
+		width: fit-content;
 	}
 	.comments {
 		padding: 10% 0;
@@ -154,7 +162,7 @@ HOME PAGE
 		left: 0;
 	}
 	.newImage {
-		right: -2vh;
+		right: 0vh;
 	}
 /* **********************************
 BLOG PAGE
