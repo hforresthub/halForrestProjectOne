@@ -763,13 +763,28 @@ ASIDE - comments
   font-size: 1.6rem;
 }
 
+.commentList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 .comment {
   padding: 5% 0;
 }
 
 .commentImage {
-  width: 40%;
-  height: 40%;
+  width: 96px;
+  height: 92px;
+}
+.commentImage img {
+  width: 96px;
+  height: 92px;
 }
 
 .commentText {
@@ -777,7 +792,8 @@ ASIDE - comments
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 5%;
+  padding: 0 2%;
+  width: 80%;
 }
 .commentText p.date {
   font-weight: bold;
