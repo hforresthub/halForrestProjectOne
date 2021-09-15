@@ -59,6 +59,9 @@ MAIN
 .contactUsList {
 	flex-direction: column;
 }
+.awesomes li a {
+	background-color: $backgroundPrimaryColor;
+}
 .awesomes li i {
 	padding: 0 1rem 0 0;
 	color: $blackColor;

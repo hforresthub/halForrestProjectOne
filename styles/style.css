@@ -246,7 +246,6 @@ GENERAL
 }
 
 body {
-  margin: 0 10%;
   background-color: #fafffe;
 }
 
@@ -986,6 +985,10 @@ MAIN
           flex-direction: column;
 }
 
+.awesomes li a {
+  background-color: #fafffe;
+}
+
 .awesomes li i {
   padding: 0 1rem 0 0;
   color: #2c2c2c;
@@ -1011,7 +1014,8 @@ MEDIA QUERIES
 ================================== */
 @media (min-width: 1000px) {
   body {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
   }
 
