@@ -56,6 +56,8 @@ const createPost = function (name, comment) {
 	newComment.classList.add('wrapper')
 	newComment.classList.add('comment')
 	commentList.appendChild(newComment)
+
+	formEl.reset()
 }
 
 // listeners
